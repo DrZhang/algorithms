@@ -1,6 +1,12 @@
 Algorithms
 ==========
 
+.. image:: https://travis-ci.org/nryoung/algorithms.svg?branch=master
+    :target: https://travis-ci.org/nryoung/algorithms
+
+.. image:: http://codecov.io/github/nryoung/algorithms/coverage.svg?branch=master
+    :target: http://codecov.io/github/nryoung/algorithms?branch=master
+
 This is an attempt to build a cohesive module of algorithms in Python.
 
 The purpose of this repo is to be a learning tool for myself and others.
@@ -14,6 +20,10 @@ Algorithms implemented so far:
 
 - Queue
 - Stack
+- Disjoint Set
+- Single Linked List
+- Undirected Graph
+- Digraph
 
 **Sorting:**
 
@@ -28,6 +38,8 @@ Algorithms implemented so far:
 - In Place Quick Sort
 - Selection Sort
 - Shell Sort
+- Gnome Sort
+- Strand Sort
 
 **Searching:**
 
@@ -36,6 +48,7 @@ Algorithms implemented so far:
 - Knuth-Morris-Pratt
 - Rabin-Karp
 - Depth First Search (Recursive)
+- Breadth First Search (Iterative)
 
 **Shuffling:**
 
@@ -46,6 +59,11 @@ Algorithms implemented so far:
 - Extended GCD
 - Standard Normal Probability Density Function
 - Cumulative Density Function (Approximation; 16 digit precision for 300 iter.)
+- Sieve of Eratosthenes
+
+**Dynamic Programming:**
+
+- Longest Common Subsequence
 
 **Random:**
 
@@ -81,11 +99,11 @@ All prequisites for the algorithms are listed in the source code for each algori
 Tests:
 ------
 
-Nose is used as the main test runner and all Unit Tests can be run by:
+Pytest is used as the main test runner and all Unit Tests can be run with:
 
 ::
 
-    $ python algorithms/run_tests.py
+    $ ./run_tests.py
 
 
 Contributing:
@@ -101,23 +119,6 @@ I want to personally thank everybody that has contributed so far and your names 
 
 TODO:
 -----
+See `TODO.rst`_.
 
-See `TODO.rst`.
-
-
-License:
---------
-
-Copyright (c) 2012 by Nic Young and contributors. See AUTHORS.rst for more details
-
-Some rights reserved.
-
-Redistribution and use in source and binary forms of the software as well as documentation, with or without modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-
-* The names of the contributors may not be used to endorse or promote products derived from this software without specific prior written permission.
-
-THIS SOFTWARE AND DOCUMENTATION IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE AND DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+.. _`TODO.rst`: TODO.rst
